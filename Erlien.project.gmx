@@ -12,6 +12,26 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_Input.gml</script>
+    <script>scripts\scr_move.gml</script>
+    <script>scripts\scr_player_control.gml</script>
+  </scripts>
+  <objects name="objects">
+    <objects name="active objs">
+      <objects name="user interactive">
+        <object>objects\obj_player</object>
+      </objects>
+    </objects>
+    <objects name="Utill">
+      <object>objects\obj_camera</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <rooms name="Debug_rooms">
+      <room>rooms\rm_Debug</room>
+    </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
