@@ -8,11 +8,25 @@
   <sprites name="sprites">
     <sprites name="Test">
       <sprite>sprites\spr_test_player</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_wall__Sensor</sprite>
+      <sprite>sprites\spr_wall_top_right_corner</sprite>
+      <sprite>sprites\spr_top_right__Sensor</sprite>
+      <sprite>sprites\spr_top_left__Sensor</sprite>
+      <sprite>sprites\spr_bottom_left__Sensor</sprite>
+      <sprite>sprites\spr_bottom_right__Sensor</sprite>
+      <sprite>sprites\spr_wall_top_left_coner</sprite>
+      <sprite>sprites\spr_wall_bottom_left_corner</sprite>
+      <sprite>sprites\spr_wall_bottom_right_corner</sprite>
+      <sprite>sprites\spr_full_wall</sprite>
+      <sprite>sprites\spr_full_wall_Sensor</sprite>
     </sprites>
+    <sprite>sprites\spr_warp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_collsion_check.gml</script>
     <script>scripts\scr_Input.gml</script>
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_player_control.gml</script>
@@ -25,11 +39,32 @@
     </objects>
     <objects name="Utill">
       <object>objects\obj_camera</object>
+      <objects name="class">
+        <object>objects\obj_life_forme</object>
+      </objects>
+      <objects name="walls">
+        <object>objects\obj_wall</object>
+        <object>objects\obj_top_right_corner_wall</object>
+        <object>objects\obj_wall_bottom_left_corner</object>
+        <object>objects\obj_top_left_wall_corner</object>
+        <object>objects\obj_wall_bottom_right_corner</object>
+        <object>objects\obj_full_wall</object>
+        <objects name="Detection">
+          <object>objects\obj_Sensor</object>
+          <object>objects\obj_Sensor_top_right</object>
+          <object>objects\obj_Sensor_top_left</object>
+          <object>objects\obj_Sensor_bottom_left</object>
+          <object>objects\obj_Sensor_bottom_right</object>
+          <object>objects\obj_full_wall_Sensor</object>
+        </objects>
+      </objects>
+      <object>objects\obj_warp</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug</room>
+      <room>rooms\room1</room>
     </rooms>
   </rooms>
   <help>
