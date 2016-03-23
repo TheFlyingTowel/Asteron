@@ -1,5 +1,5 @@
 ///scr_collsion_check(<x1,y1,x2,y2,x3,y3,x4,y4>);
-var x1,y1,x2,y2,x3,y3,x4,y4;
+var x1,y1,x2,y2,x3,y3,x4,y4,test;
 x1 = argument0;
 y1 = argument1;
 x2 = argument2;

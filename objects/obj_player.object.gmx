@@ -28,7 +28,31 @@
             <string>///Creates player variables
 event_inherited();
 state = scr_player_control; 
-
+stop_movement = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///rests move
+//stop_movement = false;
 </string>
           </argument>
         </arguments>
@@ -53,8 +77,39 @@ state = scr_player_control;
             <kind>1</kind>
             <string>///Tickes the player
 event_inherited();
-
+depth = -y-900;
 script_execute(state);
+if(stop_movement){
+if(alarm[0] == -1){
+alarm[0] = room_speed*.1;
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Debug
+draw_text(32,224,"FPS: "+string(fps));
+
 
 </string>
           </argument>
@@ -74,8 +129,8 @@ script_execute(state);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>20,0</point>
+    <point>0,16</point>
+    <point>20,16</point>
     <point>20,32</point>
     <point>0,32</point>
   </PhysicsShapePoints>

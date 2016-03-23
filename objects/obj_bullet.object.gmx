@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///cerates variables
-target = obj_player;
-shake = 0.0;
-
+            <string>///Creates vars
 </string>
           </argument>
         </arguments>
@@ -51,47 +48,7 @@ shake = 0.0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Ues the camera
-if(instance_exists(obj_player)){
-var xto,yto,spd;
-spd = obj_player.spd;
-if(instance_exists(target)){
-
-//sets movement vars
-xto = target.x + lengthdir_x(min(96,distance_to_point(target.x,target.y)),direction)
-yto = target.y + lengthdir_x(min(96,distance_to_point(target.x,target.y)),direction)
-
-//moves the camera
-x += (target.x - x) * (spd/5);
-y += (target.y - y) * (spd/5);
-
-x += (xto-x)/25;
-y += (xto-y)/25;
-
-
-//centers the view
-view_xview = -(view_wview/2) + x
-view_yview = -(view_hview/2) + y
-
-//keeps view with in the bounds of the game
-view_xview = clamp(view_xview,0,room_width-view_wview);
-view_yview = clamp(view_yview,0,room_height-view_hview);
-//shakes the screen
-view_xview += random_range(-shake,shake);
-view_yview += random_range(-shake,shake);
-shake *= 0.9;
-}else{}
-depth = -y;
-
-}
-
-
-
-
-
-
-
-
+            <string>///Tick
 </string>
           </argument>
         </arguments>

@@ -20,6 +20,9 @@
       <sprite>sprites\spr_wall_bottom_right_corner</sprite>
       <sprite>sprites\spr_full_wall</sprite>
       <sprite>sprites\spr_full_wall_Sensor</sprite>
+      <sprite>sprites\spr_fence</sprite>
+      <sprite>sprites\spr_gun</sprite>
+      <sprite>sprites\spr_bullet</sprite>
     </sprites>
     <sprite>sprites\spr_warp</sprite>
   </sprites>
@@ -60,11 +63,23 @@
       </objects>
       <object>objects\obj_warp</object>
     </objects>
+    <objects name="Fence">
+      <object>objects\obj_fence</object>
+      <object>objects\obj_fence_bottom</object>
+      <object>objects\obj_fence_left</object>
+      <object>objects\obj_fence_right</object>
+      <object>objects\obj_fence_top</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_gun</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug</room>
-      <room>rooms\room1</room>
+      <room>rooms\rm_Debug2</room>
+    </rooms>
+    <rooms name="Gamae">
+      <room>rooms\rm_Home_zone</room>
     </rooms>
   </rooms>
   <help>
