@@ -7,3 +7,9 @@ right_key = keyboard_check(vk_right)*spd;
 
 hspd = (keyboard_check(vk_right)- keyboard_check(vk_left))*spd;
 vspd = (keyboard_check(vk_down) - keyboard_check(vk_up))*spd;
+
+//get axis
+  xaxis = (right_key - left_key);
+ yaxis = (down_key - up_key);
+
+

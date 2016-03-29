@@ -7,6 +7,16 @@ hspd = 0;
 vspd = 0;
 }
 
+// Get direction
+ dir = point_direction(0 , 0 , xaxis, yaxis);
+
+ //get length
+if(xaxis == 0 and yaxis = 0){len = 0;}else{len = spd;}
+
+
+//get hspd and vspd 
+hspd = lengthdir_x(len,dir);
+vspd = lengthdir_y(len,dir);
 
 
 
