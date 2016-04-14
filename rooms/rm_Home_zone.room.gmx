@@ -200,6 +200,7 @@
     <instance objName="obj_fence_left" x="1728" y="1280" name="inst_75975814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence_left" x="1728" y="1312" name="inst_614FB8ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence_left" x="1728" y="1344" name="inst_B3190DEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_test_house" x="1056" y="800" name="inst_70920AD0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

@@ -25,8 +25,14 @@
       <sprite>sprites\spr_bullet</sprite>
     </sprites>
     <sprite>sprites\spr_warp</sprite>
+    <sprites name="World Assets">
+      <sprite>sprites\spr_test_house</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+    <background>background\background1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_collsion_check.gml</script>
@@ -72,14 +78,13 @@
       <object>objects\obj_bullet</object>
       <object>objects\obj_gun</object>
     </objects>
+    <object>objects\obj_test_house</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_Home_zone</room>
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug</room>
       <room>rooms\rm_Debug2</room>
-    </rooms>
-    <rooms name="Gamae">
-      <room>rooms\rm_Home_zone</room>
     </rooms>
   </rooms>
   <help>
