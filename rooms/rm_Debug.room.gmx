@@ -27,7 +27,7 @@ if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
+    <page>4</page>
     <xoffset>-31</xoffset>
     <yoffset>-173</yoffset>
   </makerSettings>

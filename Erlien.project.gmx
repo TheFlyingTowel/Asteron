@@ -27,6 +27,7 @@
     <sprite>sprites\spr_warp</sprite>
     <sprites name="World Assets">
       <sprite>sprites\spr_test_house</sprite>
+      <sprite>sprites\spr_House</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -78,10 +79,13 @@
       <object>objects\obj_bullet</object>
       <object>objects\obj_gun</object>
     </objects>
-    <object>objects\obj_test_house</object>
+    <object>objects\obj_House</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Home_zone</room>
+    <room>rooms\Start</room>
+    <rooms name="Game">
+      <room>rooms\rm_Home_zone</room>
+    </rooms>
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug</room>
       <room>rooms\rm_Debug2</room>
