@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-214</xoffset>
-    <yoffset>-143</yoffset>
+    <xoffset>531</xoffset>
+    <yoffset>532</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,8 +51,8 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_House" x="512" y="320" name="inst_70920AD0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="640" y="608" name="inst_C7EF13CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_House" x="504" y="321" name="inst_70920AD0" locked="0" code="" scaleX="2.28571438789368" scaleY="2.53465342521667" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="625" y="606" name="inst_C7EF13CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="256" y="224" name="inst_87670EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="256" y="768" name="inst_D4EABF40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="960" y="224" name="inst_512B27DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -131,6 +131,26 @@
     <instance objName="obj_fence_top" x="864" y="224" name="inst_18B537FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence_top" x="928" y="224" name="inst_396CEEE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence_top" x="896" y="224" name="inst_BCD662FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="576" y="544" name="inst_747E4B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="608" y="544" name="inst_5F288805" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="672" y="544" name="inst_EB4C6C78" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="640" y="544" name="inst_8C0FCD0C" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="544" name="inst_C93BA11D" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="544" name="inst_AD5C122B" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="512" name="inst_F8338967" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="512" name="inst_41EA1CA7" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="480" name="inst_C2385FEE" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="448" name="inst_5033C608" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="416" name="inst_861BDFFF" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="672" y="384" name="inst_F92E3D8F" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="640" y="384" name="inst_82643A5D" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="608" y="384" name="inst_8B78A6C1" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="384" name="inst_325BDD02" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="416" name="inst_BF02E9D0" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="480" name="inst_324DE2F4" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="448" name="inst_092B1415" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="576" y="384" name="inst_3F0AF763" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="384" name="inst_A9D8F886" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

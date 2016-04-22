@@ -8,6 +8,31 @@
   <parentName>obj_Sensor</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+dFix = -1;
+houseDepth = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,7 +52,56 @@
             <kind>1</kind>
             <string>///Tick wall
 event_inherited();
-test = scr_collsion_check(x,y,x+32,y,x+32,y+32,x,y+32);
+test = scr_collsion_check(x+32,y+32,x,y,x,y,x,y);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///House Control
+
+if(houseDepth){
+if(test){
+
+switch(dFix){
+
+case 0:
+obj_House.depthFix = 0;
+break;
+
+case 1:
+obj_House.depthFix = -y-9999999999999;
+break;
+
+
+default:
+break;
+
+
+
+
+
+}
+}
+}
+
+
 
 </string>
           </argument>
