@@ -85,6 +85,7 @@
     <room>rooms\Start</room>
     <rooms name="Game">
       <room>rooms\rm_Home_zone</room>
+      <room>rooms\RM_house_indorrs</room>
     </rooms>
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug</room>

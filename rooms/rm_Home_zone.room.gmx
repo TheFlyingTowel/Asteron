@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1211</width>
   <height>899</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1056</h>
+    <w>984</w>
+    <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>531</xoffset>
-    <yoffset>532</yoffset>
+    <page>4</page>
+    <xoffset>2289</xoffset>
+    <yoffset>1716</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -142,15 +142,20 @@
     <instance objName="obj_full_wall_Sensor" x="704" y="480" name="inst_C2385FEE" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="704" y="448" name="inst_5033C608" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="704" y="416" name="inst_861BDFFF" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="672" y="384" name="inst_F92E3D8F" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="640" y="384" name="inst_82643A5D" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="608" y="384" name="inst_8B78A6C1" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="544" y="384" name="inst_325BDD02" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="672" y="320" name="inst_F92E3D8F" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="640" y="320" name="inst_82643A5D" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="608" y="320" name="inst_8B78A6C1" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="320" name="inst_325BDD02" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="544" y="416" name="inst_BF02E9D0" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="544" y="480" name="inst_324DE2F4" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="544" y="448" name="inst_092B1415" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="576" y="384" name="inst_3F0AF763" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_full_wall_Sensor" x="704" y="384" name="inst_A9D8F886" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="576" y="320" name="inst_3F0AF763" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="320" name="inst_A9D8F886" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="384" name="inst_73EAB094" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="384" name="inst_4D94E0E1" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="544" y="352" name="inst_C19A833D" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_full_wall_Sensor" x="704" y="352" name="inst_FAFF64D8" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="630" y="519" name="inst_4729391F" locked="0" code="target_x = 288;&#xA;target_y = 544;&#xA;target_r = RM_house_indorrs;&#xA;" scaleX="0.84375" scaleY="1.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

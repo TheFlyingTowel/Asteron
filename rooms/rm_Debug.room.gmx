@@ -17,7 +17,7 @@ if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>1000</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -28,8 +28,8 @@ if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>4</page>
-    <xoffset>-31</xoffset>
-    <yoffset>-173</yoffset>
+    <xoffset>5609</xoffset>
+    <yoffset>5966</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
