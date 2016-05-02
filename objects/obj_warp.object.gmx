@@ -58,6 +58,7 @@ target_r = rm_top_floor
             <kind>1</kind>
             <string>///Changes door sprite
 sprite_index = global.door;
+visible = wall_show;
 </string>
           </argument>
         </arguments>

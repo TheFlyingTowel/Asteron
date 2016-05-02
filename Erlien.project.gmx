@@ -33,6 +33,7 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\bg_indoor</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -69,6 +70,7 @@
         </objects>
       </objects>
       <object>objects\obj_warp</object>
+      <object>objects\obj_Control</object>
     </objects>
     <objects name="Fence">
       <object>objects\obj_fence</object>

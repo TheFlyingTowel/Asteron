@@ -28,7 +28,7 @@ room_goto(rm_Home_zone);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
+    <page>0</page>
     <xoffset>0</xoffset>
     <yoffset>0</yoffset>
   </makerSettings>
@@ -54,6 +54,7 @@ room_goto(rm_Home_zone);</code>
   </views>
   <instances>
     <instance objName="obj_camera" x="0" y="0" name="inst_8C28D86D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control" x="32" y="0" name="inst_02866F76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

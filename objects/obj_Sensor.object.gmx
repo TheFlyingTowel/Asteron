@@ -55,7 +55,7 @@ target = obj_life_forme;
             <string>///Wall tick
 depth = -y;
 test = scr_collsion_check(x,y,32+x,y+0,32+x,20+y,x+0,20+y);
-
+visible = wall_show;
 </string>
           </argument>
         </arguments>
