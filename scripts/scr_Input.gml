@@ -12,4 +12,3 @@ vspd = (keyboard_check(vk_down) - keyboard_check(vk_up))*spd;
   xaxis = (right_key - left_key);
  yaxis = (down_key - up_key);
 
-
