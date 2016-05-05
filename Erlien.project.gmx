@@ -23,6 +23,7 @@
       <sprite>sprites\spr_fence</sprite>
       <sprite>sprites\spr_gun</sprite>
       <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_ai_test</sprite>
     </sprites>
     <sprite>sprites\spr_warp</sprite>
     <sprites name="World Assets">
@@ -46,6 +47,9 @@
     <objects name="active objs">
       <objects name="user interactive">
         <object>objects\obj_player</object>
+      </objects>
+      <objects name="liveObjs">
+        <object>objects\obj_alien</object>
       </objects>
     </objects>
     <objects name="Utill">
@@ -71,6 +75,7 @@
       </objects>
       <object>objects\obj_warp</object>
       <object>objects\obj_Control</object>
+      <object>objects\obj_grid</object>
     </objects>
     <objects name="Fence">
       <object>objects\obj_fence</object>
