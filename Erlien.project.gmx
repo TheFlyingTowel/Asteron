@@ -42,6 +42,10 @@
     <script>scripts\scr_Input.gml</script>
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_player_control.gml</script>
+    <scripts name="States">
+      <script>scripts\scr_enemy_move.gml</script>
+      <script>scripts\scr_enemy_idle.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="active objs">

@@ -34,11 +34,14 @@ x = 0;
 y = 0;
 
 path = path_add();
-state = -1;
+state = scr_enemy_idle;
 
 
+mx = 0;
+my = 0;
 
-
+rx = 0;
+ry = 0;
 pos = 0;
 force = 1;
 precision  = 1;
@@ -63,6 +66,40 @@ if(distance &lt; 50){
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///IDLE
+
+ rx = random_range(-1,1);
+
+ ry = random_range(-1,1);
+
+ dir = point_direction(phy_position_x,phy_position_y, rx,ry);
+ 
+ 
+ mx = lengthdir_x(rx,dir);
+ 
+ my = lengthdir_y(ry,dir);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -80,54 +117,15 @@ if(distance &lt; 50){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movement
-depth= -y;
+            <string>script_execute(state);
 
-if(instance_exists(obj_player)){
+if(alarm[0] == -1){
 
-///Path
-
-var path_x = path_get_point_x(path, pos);
-var path_y = path_get_point_y(path, pos);
-var pdir = point_direction(phy_position_x, phy_position_y, path_x, path_y);
-var vx = lengthdir_x(force, pdir);
-var vy = lengthdir_y(force, pdir);
-var distance = point_distance(phy_position_x, phy_position_y, path_x, path_y);
-//moves obj
-physics_apply_force(x,y,(vx)*(distance*116),(vy)*(distance*116));
-
-// gets absolute value of the spd the obj is moving and it adjust the precision of its movement
-if(abs(phy_speed_x) &gt; precision){phy_speed_x = precision*sign(phy_speed_x)}
-if(abs(phy_speed_y) &gt; precision){phy_speed_y = precision*sign(phy_speed_y)}
-//set the obj to move to a differnt point
-
-
-
-
-if(distance &lt; 1){
-    pos++;
-    if(pos &gt;= path_get_number(path)){
-        pos = 0;
-    }    
-}
-
-
-tx = obj_player.phy_position_x;
-ty = obj_player.phy_position_y;
-
-
-if mp_grid_path(global.grid, path, x, y, tx, ty, 1){
-          //  mp_potential_step_object(px,py,aspd,obj_wall);
-           //  path_start(path, 2, path_action_stop,true);
-           
-            }    
-
-}else{
-
-x = 0;
-y = 0;
+    alarm[0] = room_speed*2;
 
 }
+
+depth = -y;
 </string>
           </argument>
         </arguments>
