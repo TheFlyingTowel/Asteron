@@ -42,18 +42,11 @@
     <script>scripts\scr_Input.gml</script>
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_player_control.gml</script>
-    <scripts name="States">
-      <script>scripts\scr_enemy_move.gml</script>
-      <script>scripts\scr_enemy_idle.gml</script>
-    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="active objs">
       <objects name="user interactive">
         <object>objects\obj_player</object>
-      </objects>
-      <objects name="liveObjs">
-        <object>objects\obj_alien</object>
       </objects>
     </objects>
     <objects name="Utill">
@@ -79,16 +72,6 @@
       </objects>
       <object>objects\obj_warp</object>
       <object>objects\obj_Control</object>
-      <object>objects\obj_grid</object>
-    </objects>
-    <objects name="Fence">
-      <object>objects\obj_fence</object>
-      <object>objects\obj_fence_bottom</object>
-      <object>objects\obj_fence_left</object>
-      <object>objects\obj_fence_right</object>
-      <object>objects\obj_fence_top</object>
-      <object>objects\obj_bullet</object>
-      <object>objects\obj_gun</object>
     </objects>
     <object>objects\obj_House</object>
   </objects>

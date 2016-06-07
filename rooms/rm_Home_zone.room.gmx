@@ -51,88 +51,8 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_grid" x="427" y="435" name="inst_D2DF2D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_alien" x="562" y="631" name="inst_E9D37965" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_House" x="504" y="321" name="inst_70920AD0" locked="0" code="" scaleX="2.28571438789368" scaleY="2.53465342521667" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="625" y="606" name="inst_C7EF13CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence" x="256" y="224" name="inst_87670EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence" x="256" y="768" name="inst_D4EABF40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence" x="960" y="224" name="inst_512B27DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence" x="960" y="768" name="inst_21BF3400" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="352" name="inst_4E7E283A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="256" name="inst_B07000B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="288" name="inst_9B72F11F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="320" name="inst_22E9AB25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="384" name="inst_60A8BA17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="416" name="inst_83462B1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="448" name="inst_4E7844B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="480" name="inst_B4B81BDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="512" name="inst_51D4F707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="544" name="inst_2AB59DF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="576" name="inst_A492760F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="608" name="inst_874EF180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="640" name="inst_1A9926E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="672" name="inst_8E667753" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="704" name="inst_BDDD7F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_left" x="960" y="736" name="inst_AA5F3EF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="256" name="inst_6275DD38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="288" name="inst_992966FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="320" name="inst_D9AD9A72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="352" name="inst_30BD7489" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="384" name="inst_181561A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="416" name="inst_1FA4E483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="448" name="inst_A9C7842F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="480" name="inst_9CDE62AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="512" name="inst_39409E58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="544" name="inst_1D37731F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="576" name="inst_94E144D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="608" name="inst_600F0CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="672" name="inst_33DAC008" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="640" name="inst_50AE0B3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="704" name="inst_D961B711" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_right" x="256" y="736" name="inst_92F4D28B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="288" y="768" name="inst_28ADD9F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="320" y="768" name="inst_5DC3AACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="352" y="768" name="inst_DB35B599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="384" y="768" name="inst_D41F09F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="416" y="768" name="inst_9D41CD9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="448" y="768" name="inst_91BE3553" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="480" y="768" name="inst_7759BED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="512" y="768" name="inst_EDC63128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="544" y="768" name="inst_C791895F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="576" y="768" name="inst_248D1BA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="608" y="768" name="inst_10CF14B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="640" y="768" name="inst_9B551A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="672" y="768" name="inst_70EA2572" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="704" y="768" name="inst_419C66A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="736" y="768" name="inst_E9D09FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="768" y="768" name="inst_D0B38337" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="800" y="768" name="inst_75398B46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="832" y="768" name="inst_C7EE0B8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="864" y="768" name="inst_92CF78A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="896" y="768" name="inst_68DB9619" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_bottom" x="928" y="768" name="inst_8A7317A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="288" y="224" name="inst_B7C66823" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="320" y="224" name="inst_BC52A0E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="352" y="224" name="inst_4EC6A0C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="384" y="224" name="inst_03D1D01B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="416" y="224" name="inst_E9E6ABC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="448" y="224" name="inst_1EECDDE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="480" y="224" name="inst_6FADA337" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="512" y="224" name="inst_95829509" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="544" y="224" name="inst_FA42BAE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="576" y="224" name="inst_3BB08EF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="608" y="224" name="inst_B2B16023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="640" y="224" name="inst_6C8793E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="672" y="224" name="inst_7EBA43A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="704" y="224" name="inst_605D8ABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="736" y="224" name="inst_EE62CA45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="768" y="224" name="inst_37A2ED9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="800" y="224" name="inst_1C39C1F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="832" y="224" name="inst_DAF39E28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="864" y="224" name="inst_18B537FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="928" y="224" name="inst_396CEEE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fence_top" x="896" y="224" name="inst_BCD662FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="576" y="544" name="inst_747E4B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="608" y="544" name="inst_5F288805" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="672" y="544" name="inst_EB4C6C78" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
