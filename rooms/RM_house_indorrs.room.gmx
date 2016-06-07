@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1056</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>3242</xoffset>
-    <yoffset>7409</yoffset>
+    <xoffset>396</xoffset>
+    <yoffset>1234</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bg_indoor" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -58,7 +58,7 @@
     <instance objName="obj_full_wall" x="541" y="0" name="inst_F2C6F9FC" locked="0" code="" scaleX="0.28125" scaleY="18.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall" x="0" y="0" name="inst_08CF14A6" locked="0" code="" scaleX="0.25" scaleY="18.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall" x="1" y="0" name="inst_76CFAAF8" locked="0" code="" scaleX="17.15625" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="271" y="591" name="inst_D9DE025A" locked="0" code="target_x = 641;&#xA;target_y = 573;&#xA;target_r = rm_Home_zone;&#xA;" scaleX="1.21875" scaleY="0.28125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="271" y="591" name="inst_D9DE025A" locked="0" code="target_x = 640;&#xA;target_y = 573;&#xA;target_r = rm_Home_zone;&#xA;" scaleX="1.21875" scaleY="0.28125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

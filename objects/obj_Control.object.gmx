@@ -64,7 +64,7 @@ break;
 
 
 default:
-wall_show = false;
+wall_show = true;
 break;
 
 
