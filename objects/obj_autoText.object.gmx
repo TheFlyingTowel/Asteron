@@ -26,13 +26,41 @@
           <argument>
             <kind>1</kind>
             <string>///Set vars
-alpha = 0;
-print = "";
-time = 0;
-depth = depth - instance_number(obj_text);
-autoDestroy = false;
-ready = false;
-
+readLine = 0;
+readTime0 = 2;
+readTime1 = 2;
+readTime2 = 2;
+readTime3 = 2;
+//alarm[0] = room_speed ;
+global.txt[0] = "";
+global.txt[1] = "";
+global.txt[2] = "";
+global.txt[3] = "";
+global.txt[4] = "";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Alarm
+readLine += 1;
 </string>
           </argument>
         </arguments>
@@ -56,7 +84,9 @@ ready = false;
           <argument>
             <kind>1</kind>
             <string>///Alarm
-obj_autoText.readLine += 1;
+readLine += 1;
+with(obj_text) instance_destroy();
+
 </string>
           </argument>
         </arguments>
@@ -79,101 +109,84 @@ obj_autoText.readLine += 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///
-if(autoDestroy) instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw Text
-if(time &lt; textLen)
+            <string>///read
+
+switch(readLine)
 {
- time += spd;
- print = string_copy(text,0,time)
+    case 0:
+    scr_text(global.txt[0],.5,view_xview[0]/2,view_xview[0]/2,1)
+    if(alarm[1] == -1) alarm[1] = room_speed/2;
+    break;
+    
+    case 1:
+    if(alarm[0] == -1) alarm[0] = room_speed*readTime0;
+    break;
+    
+    case 2:
+    scr_text(global.txt[1],.5,view_xview[0]/2,view_xview[0]/2,1)
+        if(alarm[1] == -1) alarm[1] = room_speed/2;
+    break; 
+    
+    case 3:
+    if(alarm[0] == -1) alarm[0] = room_speed*readTime1;
+    break;
+    
+    case 4:
+    scr_text(global.txt[2],.5,view_xview[0]/2,view_xview[0]/2,1) 
+        if(alarm[1] == -1) alarm[1] = room_speed/2;   
+     break;
+    
+    case 5:
+    if(alarm[0] == -1) alarm[0] = room_speed*readTime2;
+    break;
+     
+     
+    case 6:
+    scr_text(global.txt[3],.5,view_xview[0]/2,view_xview[0]/2,1)    
+        if(alarm[1] == -1) alarm[1] = room_speed/2;
+    break;
+    
+    case 7:
+    if(alarm[0] == -1) alarm[0] = room_speed*readTime3;
+    break;
+    
+    case 8:
+    scr_text(global.txt[4],.5,view_xview[0]/2,view_xview[0]/2,1);
+        if(alarm[1] == -1) alarm[1] = room_speed/2;    
+    break;
+    
+    case 9:
+    with(obj_text) instance_destroy();
+    instance_destroy();
+    break;
+
 }
 
-if(string_length(print) == textLen)
+
+/*
+if(readLine != 4)
 {
+if(string_length(obj_text.print) == obj_text.textLen){
+if(alarm[0] == -1) alarm[0] = room_speed*2;
 
-
-
- if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord('Z'))|| keyboard_check_pressed(ord('X'))){
-
-
- if(auto){
- 
- ready = true;
- 
- }
-    
-  instance_destroy();
-    
-    
-    
-    }
+}
 }
 
+//obj_text.autoDestroy = true;
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Render Box
-draw_set_alpha(alpha);
-if(alpha &lt; 1) alpha += spd/10; else alpha = 1;
 
-draw_set_font(font);
-if(room != rm_story) draw_set_color(c_white); else draw_set_color(c_black);
-draw_rectangle(x - 8,y - 8,x+boxWidth + 8,y+boxHeight + 8,0);
-draw_set_colour(c_black);
-draw_rectangle(x,y,x+boxWidth,y+boxHeight,0);
 
-draw_set_color(c_white)
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text_ext
-(
-    x + padding,
-    y + padding,
-    print,
-    font_size + (font_size/2),
-    maxLen
-)
-draw_set_alpha(1);
+/*
+if(instance_exists(obj_text)){
+if(alarm[0] == -1)
+alarm[0] = room_speed * readTime;
+}
+*/
+
+
+
+
+
 
 </string>
           </argument>

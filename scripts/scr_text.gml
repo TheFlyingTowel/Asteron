@@ -1,15 +1,19 @@
-//scr_text("Text",Speed,x,y);
+//scr_text("Text",Speed,x,y,auto);
+
+
 
 txt = instance_create(argument2,argument3,obj_text);
+
 with(txt)
 {
+    auto = argument4;
     padding = 16;
     maxLen = view_wview[0];
     text = argument0;
     spd = argument1;
     font = fnt;
     
-    
+
     textLen = string_length(text);
     font_size = font_get_size(font);
    
@@ -22,5 +26,4 @@ with(txt)
     boxWidth = text_width + (padding*2);
     boxHeight = text_height + (padding*2);
 }
-
 

@@ -12,13 +12,13 @@
   <showcolour>-1</showcolour>
   <code>///Creates player in the room;
 if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}
-scr_text("Debug Room...",.3,400,20);</code>
+scr_text("Debug Room...",.3,400,20,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>984</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
