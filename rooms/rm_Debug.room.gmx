@@ -12,14 +12,14 @@
   <showcolour>-1</showcolour>
   <code>///Creates player in the room;
 if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}
-scr_text("Debug Room...",.3,400,20,0);</code>
+scr_text("The Debug Room...",.3,400,20,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
-    <h>600</h>
+    <w>1872</w>
+    <h>1096</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -29,8 +29,8 @@ scr_text("Debug Room...",.3,400,20,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>5609</xoffset>
-    <yoffset>5966</yoffset>
+    <xoffset>16</xoffset>
+    <yoffset>-113</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

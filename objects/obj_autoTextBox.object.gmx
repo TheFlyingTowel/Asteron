@@ -25,12 +25,46 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set vars
-alpha = 0;
-print = "";
-time = 0;
-depth = depth - instance_number(obj_text);
+            <string>
+width = 240
+height = 120
+padding = 8
 
+start = ds_list_create();
+ds_list_add(start,0);
+
+count = 0;
+last_space = 0;
+line = 0;
+done = false;
+message = "Stuff to say by your self in the light of your eyes,are soo bright they can out wihit the sun. Too bright i say far too bright. I need a greate light to gight a light so bright"
+time = 0;
+str = "";
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+ds_list_destroy(start);
 
 </string>
           </argument>
@@ -54,66 +88,45 @@ depth = depth - instance_number(obj_text);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Text
-if(time &lt; textLen)
-{
- time += spd;
- print = string_copy(text,0,time)
-}
-//
-if(string_length(print) == textLen)
-{
- if(keyboard_check_pressed(vk_enter) 
- || keyboard_check_pressed(ord('Z'))
- || keyboard_check_pressed(ord('X'))){
-  instance_destroy();
-    }
-}
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Render Box
-draw_set_alpha(alpha);
-if(alpha &lt; 1) alpha += spd/10; else alpha = 1;
-
-draw_set_font(font);
-if(room != rm_story) draw_set_color(c_white); else draw_set_color(c_black);
-draw_rectangle(x - 4,y - 4,x+boxWidth + 4,y+boxHeight + 4,0);
-draw_set_colour(c_black);
-draw_rectangle(x,y,x+boxWidth,y+boxHeight,0);
-
-draw_set_color(c_white)
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-draw_text_ext
-(
-    x + padding,
-    y + padding,
-    print,
-    font_size + (font_size/2),
-    maxLen
-)
+            <string>
+draw_set_alpha(.5);
+draw_roundrect_colour(x,y,x+width,y+height,c_black,c_black,false);
 draw_set_alpha(1);
 
+draw_set_color(c_white);
+
+
+
+if(string_width(str) &gt; width - padding - padding){
+                     
+                     message = string_delete(message,last_space,1);
+                     message = string_insert("#",message,last_space);
+                     ds_list_add(start,last_space+1);
+}
+
+if(count &lt; string_length(message)){
+         
+         if(string_char_at(message,count) == " "){
+         last_space = count;
+         }
+         
+         count+= time;
+         
+}
+
+  if(string_length(message) == string_length(str)){
+done = true;
+}
+
+
+
+if(string_height(str) &gt; height - padding){
+                      line++;
+}
+time += spd;
+str = string_copy(message,ds_list_find_value(start,line),(count - ds_list_find_value(start,line)));
+
+draw_text(x+padding,y+padding,str);
 </string>
           </argument>
         </arguments>

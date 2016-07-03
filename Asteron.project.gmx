@@ -77,7 +77,7 @@
       <object>objects\obj_warp</object>
       <object>objects\obj_Control</object>
       <object>objects\obj_text</object>
-      <object>objects\obj_autoText</object>
+      <object>objects\obj_autoTextBox</object>
     </objects>
     <object>objects\obj_House</object>
   </objects>

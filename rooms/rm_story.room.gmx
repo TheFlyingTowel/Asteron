@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>870</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
+    <page>0</page>
     <xoffset>-87</xoffset>
     <yoffset>-65</yoffset>
   </makerSettings>
@@ -50,9 +50,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances>
-    <instance objName="obj_autoText" x="0" y="0" name="inst_6675B3E3" locked="0" code="readTime0 = 2;&#xA;readTime1 = 10;&#xA;readTime2 = 2;&#xA;readTime3 = 2;&#xA;&#xA;&#xA;&#xA;global.txt[0] = &quot;The Year is 20X...&quot;&#xA;global.txt[1] = &quot;A 100 year war between the Dramnyk and the Humans, where the Dramnyk Lord's#forces kidnaps the lands greatest and only holy princess,Princess Cria...&quot;&#xA;global.txt[2] = &quot;She is thought to be forever lost to the people&quot;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-  </instances>
+  <instances/>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
