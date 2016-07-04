@@ -63,8 +63,7 @@ str = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-ds_list_destroy(start);
+            <string>ds_list_destroy(start);
 
 </string>
           </argument>

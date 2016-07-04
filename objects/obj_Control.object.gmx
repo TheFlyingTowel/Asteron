@@ -101,7 +101,8 @@ break;
 
 default:
 with(obj_autoTextBox)if(done) instance_destroy();
-next = 0
+next = -1;
+alarm = room_speed*3;
 break;
 
 }
