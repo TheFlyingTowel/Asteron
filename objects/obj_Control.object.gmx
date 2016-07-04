@@ -28,6 +28,88 @@
             <string>///Creates global vars
 globalvar wall_show;
 wall_show = false;
+next = -1;
+globalvar readTime;
+readTime = 3;
+alarm[0] = room_speed;
+globalvar pasing;
+pasing = .005;
+
+
+global.txt0 = "";
+global.txt1 = "";
+global.txt2 = "";
+global.txt3 = "";
+global.txt4 = "";
+global.txt5 = "";
+global.txt6 = "";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>next += 1;
+switch(next)
+{
+case 0:
+scr_text(global.txt0,pasing,view_xview[0]/2,view_xview[0]/2,1);
+break;
+
+case 1:
+
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt1,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+case 2:
+if(obj_autoTextBox.done){with(obj_autoTextBox) instance_destroy();scr_text(global.txt2,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+case 3:
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt3,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+case 4:
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt4,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+case 5:
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt5,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+case 6:
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt6,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+break;
+
+default:
+with(obj_autoTextBox)if(done) instance_destroy();
+break;
+
+}
+
+
+
+
+
+
+
+
 
 </string>
           </argument>
@@ -63,6 +145,10 @@ wall_show = true;
 break;
 
 
+case rm_story:
+if(instance_exists(obj_autoTextBox)){if(alarm[0] == -1) alarm[0] = room_speed*readTime;}
+break;
+
 default:
 wall_show = true;
 break;
@@ -71,10 +157,6 @@ break;
 
 
 }
-
-
-
-
 
 
 </string>
