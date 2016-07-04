@@ -1,7 +1,7 @@
 ///scr_text("Text",Speed,x,y,auto);
     auto = argument4;
    
-if(auto)
+if(auto == 0)
 {
 txt = instance_create(argument2,argument3,obj_autoTextBox);
 with(txt)
@@ -19,7 +19,8 @@ with(txt)
     width = text_width + (padding*2);
     height = text_height + (padding*2);
 }
-} else if(!auto){
+}
+if(auto == 1){
 txt = instance_create(argument2,argument3,obj_text);
 with(txt)
 {
