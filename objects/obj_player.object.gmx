@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>obj_life_forme</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Creates player variables
-event_inherited();
-state = scr_player_control; 
-stop_movement = false;
+//event_inherited();
+//state = scr_player_control; 
+//stop_movement = false;
 </string>
           </argument>
         </arguments>
@@ -76,15 +76,15 @@ stop_movement = false;
           <argument>
             <kind>1</kind>
             <string>///Tickes the player
-event_inherited();
-depth = -y;
-script_execute(state);
-if(stop_movement){
-if(alarm[0] == -1){
-alarm[0] = room_speed*.1;
-}
+//event_inherited();
+//depth = -y;
+//script_execute(state);
+//if(stop_movement){
+//if(alarm[0] == -1){
+//alarm[0] = room_speed*.1;
+//}
 
-}
+//}
 </string>
           </argument>
         </arguments>
@@ -108,9 +108,9 @@ alarm[0] = room_speed*.1;
           <argument>
             <kind>1</kind>
             <string>///Debug
-draw_text(32,224,"FPS: "+string(fps));
-draw_text(45,248,"100HP")
-draw_text(58,272,"100MP")
+//draw_text(32,224,"FPS: "+string(fps));
+//draw_text(45,248,"100HP")
+//draw_text(58,272,"100MP")
 
 
 </string>

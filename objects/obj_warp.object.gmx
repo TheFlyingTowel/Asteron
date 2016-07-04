@@ -64,7 +64,7 @@ visible = true;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_player">
+    <event eventtype="4" ename="obj_a_player">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -82,8 +82,8 @@ visible = true;
           <argument>
             <kind>1</kind>
             <string>///Changes room
-obj_player.x = target_x;
-obj_player.y = target_y;
+obj_a_player.x = target_x;
+obj_a_player.y = target_y;
 room_goto(target_r);
 //scr_sidefade(target_r);
 
