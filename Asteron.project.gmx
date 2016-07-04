@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Test">
+      <sprite>sprites\spr_warp</sprite>
       <sprite>sprites\spr_test_player</sprite>
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_wall__Sensor</sprite>
@@ -21,14 +22,14 @@
       <sprite>sprites\spr_full_wall</sprite>
       <sprite>sprites\spr_full_wall_Sensor</sprite>
       <sprite>sprites\spr_fence</sprite>
-      <sprite>sprites\spr_gun</sprite>
-      <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_ai_test</sprite>
     </sprites>
-    <sprite>sprites\spr_warp</sprite>
     <sprites name="World Assets">
       <sprite>sprites\spr_test_house</sprite>
       <sprite>sprites\spr_House</sprite>
+    </sprites>
+    <sprites name="Alpha Player sprite">
+      <sprite>sprites\sprite20</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -82,14 +83,14 @@
     <object>objects\obj_House</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_Debug</room>
     <room>rooms\Start</room>
     <room>rooms\rm_story</room>
     <rooms name="Game">
-      <room>rooms\rm_Home_zone</room>
       <room>rooms\RM_house_indorrs</room>
+      <room>rooms\rm_Home_zone</room>
     </rooms>
     <rooms name="Debug_rooms">
-      <room>rooms\rm_Debug</room>
       <room>rooms\rm_Debug2</room>
     </rooms>
   </rooms>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Wall tick
 depth = -y;
-visible = wall_show;
+
 </string>
           </argument>
         </arguments>
@@ -57,7 +57,7 @@ visible = wall_show;
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0</PhysicsObjectDensity>
@@ -68,10 +68,5 @@ visible = wall_show;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>32,0</point>
-    <point>32,20</point>
-    <point>0,20</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

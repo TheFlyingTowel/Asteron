@@ -109,6 +109,8 @@ alarm[0] = room_speed*.1;
             <kind>1</kind>
             <string>///Debug
 draw_text(32,224,"FPS: "+string(fps));
+draw_text(45,248,"100HP")
+draw_text(58,272,"100MP")
 
 
 </string>

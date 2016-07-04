@@ -101,6 +101,7 @@ break;
 
 default:
 with(obj_autoTextBox)if(done) instance_destroy();
+next = 0
 break;
 
 }
