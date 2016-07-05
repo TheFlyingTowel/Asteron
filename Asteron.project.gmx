@@ -87,7 +87,6 @@
     <object>objects\obj_House</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Debug</room>
     <room>rooms\Start</room>
     <room>rooms\rm_story</room>
     <rooms name="Game">
@@ -96,6 +95,7 @@
     </rooms>
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug2</room>
+      <room>rooms\rm_Debug</room>
     </rooms>
   </rooms>
   <help>
