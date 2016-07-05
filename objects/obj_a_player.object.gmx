@@ -50,7 +50,7 @@ mspd = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Simple Movement in step event 
+            <string> ///Simple Movement in step event 
 
 //(Initializing movement variables)
 var MoveLeft = keyboard_check(vk_left);

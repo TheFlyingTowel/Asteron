@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///cerates variables
-target = obj_a_player;
+target = obj_player;
 shake = 0.0;
 
 </string>
@@ -52,9 +52,9 @@ shake = 0.0;
           <argument>
             <kind>1</kind>
             <string>/// Ues the camera
-if(instance_exists(obj_a_player)){
+if(instance_exists(target)){
 var xto,yto,spd;
-spd = obj_a_player.mspd;
+spd = target.spd;
 if(instance_exists(target)){
 
 //sets movement vars
@@ -76,6 +76,7 @@ view_yview = -(view_hview/2) + y
 //keeps view with in the bounds of the game
 view_xview = clamp(view_xview,0,room_width-view_wview);
 view_yview = clamp(view_yview,0,room_height-view_hview);
+
 //shakes the screen
 view_xview += random_range(-shake,shake);
 view_yview += random_range(-shake,shake);

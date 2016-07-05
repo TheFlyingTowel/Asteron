@@ -47,6 +47,7 @@
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_player_control.gml</script>
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_getface.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -55,7 +56,6 @@
     <objects name="active objs">
       <objects name="user interactive">
         <object>objects\obj_player</object>
-        <object>objects\obj_a_player</object>
       </objects>
     </objects>
     <objects name="Utill">
@@ -90,8 +90,8 @@
     <room>rooms\Start</room>
     <room>rooms\rm_story</room>
     <rooms name="Game">
-      <room>rooms\RM_house_indorrs</room>
       <room>rooms\rm_Home_zone</room>
+      <room>rooms\RM_house_indorrs</room>
     </rooms>
     <rooms name="Debug_rooms">
       <room>rooms\rm_Debug2</room>
