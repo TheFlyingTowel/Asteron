@@ -1,5 +1,4 @@
 ///scr_Input(Gives out key inputs);
-
 up_key = keyboard_check(vk_up)*spd;
 down_key = keyboard_check(vk_down)*spd;
 left_key = keyboard_check(vk_left)*spd;

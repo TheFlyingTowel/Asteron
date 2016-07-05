@@ -14,34 +14,43 @@ hspd = lengthdir_x(len,dir);
 vspd = lengthdir_y(len,dir);
 
 
-scr_move(hspd,vspd);
 
-if down_key || up_key || left_key || right_key {
-    
+
+if (down_key || up_key || left_key || right_key){
+ 
+
+
+   
 //Sprite control
-        
-if len = 0 {
-    image_index = 0
-}
+//image_speed = imgSpd;
+if (len = 0) {image_index = 0;}
 switch(face) 
 
 {
 
     case RIGHT: 
-        sprite_index = spr_a_player_right 
+    image_speed = imgSpd;
+    sprite_index = spr_a_player_right 
     break;
 
-    case LEFT: 
-        sprite_index = spr_a_player_left
+    case LEFT:
+    image_speed = imgSpd; 
+    sprite_index = spr_a_player_left
     break;
     
-    case UP: 
-        sprite_index = spr_a_player_up
+    case UP:
+    image_speed = imgSpd; 
+    sprite_index = spr_a_player_up
     break;
     
     case DOWN: 
-        sprite_index = spr_a_player_down 
+    image_speed = imgSpd;
+    sprite_index = spr_a_player_down 
     break;
 }   
 
+}else{
+image_speed = 0;
+image_index = 0;
 }
+scr_move(hspd,vspd);
