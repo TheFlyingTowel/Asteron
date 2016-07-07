@@ -27,6 +27,8 @@
     <sprites name="World Assets">
       <sprite>sprites\spr_test_house</sprite>
       <sprite>sprites\spr_House</sprite>
+      <sprite>sprites\spr_enviorment_mountain_tree</sprite>
+      <sprite>sprites\sprite23</sprite>
     </sprites>
     <sprites name="Alpha Player sprite">
       <sprite>sprites\spr_a_player_down</sprite>
@@ -39,6 +41,7 @@
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\bg_indoor</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -85,6 +88,10 @@
       <object>objects\obj_autoTextBox</object>
     </objects>
     <object>objects\obj_House</object>
+    <objects name="Enviorment">
+      <object>objects\obj_mountain_tree</object>
+      <object>objects\obj_tombstone</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start</room>
