@@ -10,15 +10,15 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.txt0 = "The year is 172x";
-global.txt1 = "In a 100 year long war there is a girl who is a half angel; she is wanted by the demon lord for her essence in order for him to obtain the power to surpass god in the war of Asteron.
+  <code>global.txt0 = "The year is TV7";
+global.txt1 = "In a 100 year war a girl that stores the power of an angel falls victom to the Dramnyk King,Volklor. He may use her power to destory Asteron, and surpass God in the war.
 ";
-global.txt2 = "This is the tale of a boy of no name";
-global.txt3 = "The boy who will save her and the world from this wretched fate...";
+global.txt2 = "This is the tale of a boy that carries no name...";
+global.txt3 = "But his power is needed to save the last hope to the people of Asteron.";
 global.txt4 = "By any means necesarry...";
 global.txt5 = "...";
 
-global.txt6 = "I will not fall until she is safe.."</code>
+global.txt6 = "YOU MUST NOT FALL UNTIL SHE IS SAFE..."</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-width = 240
+            <string>width = 240
 height = 120
 padding = 8
 
@@ -40,6 +39,29 @@ done = false;
 message = "Stuff to say by your self in the light of your eyes,are soo bright they can out wihit the sun. Too bright i say far too bright. I need a greate light to gight a light so bright"
 time = 0;
 str = "";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///tick2
 
 </string>
           </argument>
@@ -92,14 +114,14 @@ draw_set_alpha(.5);
 draw_roundrect_colour(x,y,x+width,y+height,c_black,c_black,false);
 draw_set_alpha(1);
 
-draw_set_color(c_white);
+
 
 
 
 if(string_width(str) &gt; width - padding - padding){
                      
                      message = string_delete(message,last_space,1);
-                     message = string_insert("#",message,last_space);
+                     message = string_insert("##",message,last_space);
                      ds_list_add(start,last_space+1);
 }
 
@@ -112,6 +134,7 @@ if(count &lt; string_length(message)){
          count+= time;
          
 }
+time = global.pase;
 
 if(string_length(message) == string_length(str)){
 done = true;
@@ -125,6 +148,7 @@ if(string_height(str) &gt; height - padding){
 time += spd;
 str = string_copy(message,ds_list_find_value(start,line),(count - ds_list_find_value(start,line)));
 
+draw_set_color(global.color);
 draw_text(x+padding,y+padding,str);
 </string>
           </argument>

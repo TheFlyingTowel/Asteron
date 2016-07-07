@@ -25,13 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>trigger = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Creates global vars
 globalvar wall_show;
 wall_show = false;
 next = -1;
 globalvar readTime;
 readTime = 3;
-alarm[0] = room_speed;
+if(room == rm_story)alarm[0] = room_speed;
 globalvar pasing;
 pasing = .005;
 
@@ -96,7 +117,9 @@ if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global
 break;
 
 case 6:
-if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();scr_text(global.txt6,pasing,view_xview[0]/2,view_xview[0]/2,1);}
+if(obj_autoTextBox.done){with(obj_autoTextBox)instance_destroy();
+trigger = true;
+scr_text(global.txt6,pasing,view_xview[0]/2,view_xview[0]/2,1);}
 break;
 
 default:
@@ -161,6 +184,8 @@ break;
 
 
 }
+
+if(global.txt6 == "YOU MUST NOT FALL UNTIL SHE IS SAFE..." &amp;&amp; trigger){global.color = c_red;}else{global.color = c_white}
 
 
 </string>
