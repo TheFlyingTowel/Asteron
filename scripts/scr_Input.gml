@@ -3,7 +3,7 @@ up_key = keyboard_check(vk_up)*spd;
 down_key = keyboard_check(vk_down)*spd;
 left_key = keyboard_check(vk_left)*spd;
 right_key = keyboard_check(vk_right)*spd; 
-
+dash_key = keyboard_check_pressed(ord("z"))*2;
 
 hspd = (keyboard_check(vk_right)- keyboard_check(vk_left))*spd;
 vspd = (keyboard_check(vk_down) - keyboard_check(vk_up))*spd;

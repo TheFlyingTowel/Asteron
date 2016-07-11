@@ -29,6 +29,8 @@
       <sprite>sprites\spr_House</sprite>
       <sprite>sprites\spr_enviorment_mountain_tree</sprite>
       <sprite>sprites\sprite23</sprite>
+      <sprite>sprites\spr_enviorment_forest_tree</sprite>
+      <sprite>sprites\spr_shed</sprite>
     </sprites>
     <sprites name="Alpha Player sprite">
       <sprite>sprites\spr_a_player_down</sprite>
@@ -51,6 +53,7 @@
     <script>scripts\scr_player_control.gml</script>
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_getface.gml</script>
+    <script>scripts\scr_dash_state.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -91,6 +94,8 @@
     <objects name="Enviorment">
       <object>objects\obj_mountain_tree</object>
       <object>objects\obj_tombstone</object>
+      <object>objects\obj_forest_tree</object>
+      <object>objects\obj_shed</object>
     </objects>
   </objects>
   <rooms name="rooms">

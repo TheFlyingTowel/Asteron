@@ -2,6 +2,7 @@
 
 scr_Input();
 
+
 // Get direction
  dir = point_direction(0 , 0 , xaxis, yaxis);
 
@@ -14,7 +15,11 @@ hspd = lengthdir_x(len,dir);
 vspd = lengthdir_y(len,dir);
 
 
+if (dash_key) {
 
+state = scr_dash_state;
+
+}
 
 if (down_key || up_key || left_key || right_key){
  
