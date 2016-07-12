@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1211</width>
   <height>899</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
@@ -77,7 +77,7 @@
     <instance objName="obj_full_wall_Sensor" x="704" y="384" name="inst_4D94E0E1" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="544" y="352" name="inst_C19A833D" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="704" y="352" name="inst_FAFF64D8" locked="0" code="houseDepth = true;&#xA;dFix = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="630" y="519" name="inst_4729391F" locked="0" code="target_x = 288;&#xA;target_y = 544;&#xA;target_r = RM_house_indorrs;&#xA;" scaleX="0.84375" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="630" y="511" name="inst_4729391F" locked="0" code="target_x = 288;&#xA;target_y = 544;&#xA;target_r = RM_house_indorrs;&#xA;" scaleX="0.84375" scaleY="1.6875" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="576" y="516" name="inst_BB24EA52" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="608" y="516" name="inst_279682B4" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall_Sensor" x="640" y="516" name="inst_A044230E" locked="0" code="houseDepth = true;&#xA;dFix = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

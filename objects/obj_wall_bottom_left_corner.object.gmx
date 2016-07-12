@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Tick wall
 event_inherited();
+visible = wall_show;
 </string>
           </argument>
         </arguments>

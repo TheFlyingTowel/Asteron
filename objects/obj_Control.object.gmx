@@ -25,7 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>trigger = false;
+            <string>///Creates global vars
+globalvar wall_show;
+wall_show = false;
+next = -1;
+globalvar readTime;
+readTime = 3;
+if(room == rm_story)alarm[0] = room_speed;
+globalvar pasing;
+pasing = .005;
+
+
+global.txt0 = "";
+global.txt1 = "";
+global.txt2 = "";
+global.txt3 = "";
+global.txt4 = "";
+global.txt5 = "";
+global.txt6 = "";
 </string>
           </argument>
         </arguments>
@@ -46,24 +63,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Creates global vars
-globalvar wall_show;
-wall_show = false;
-next = -1;
-globalvar readTime;
-readTime = 3;
-if(room == rm_story)alarm[0] = room_speed;
-globalvar pasing;
-pasing = .005;
-
-
-global.txt0 = "";
-global.txt1 = "";
-global.txt2 = "";
-global.txt3 = "";
-global.txt4 = "";
-global.txt5 = "";
-global.txt6 = "";
+            <string>trigger = false;
 </string>
           </argument>
         </arguments>
@@ -177,7 +177,7 @@ if(instance_exists(obj_autoTextBox)){if(alarm[0] == -1) alarm[0] = room_speed*re
 break;
 
 default:
-wall_show = true;
+wall_show = false;
 break;
 
 

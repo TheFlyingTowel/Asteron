@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Wall tick
 depth = -y;
+visible = wall_show;
 
 </string>
           </argument>
