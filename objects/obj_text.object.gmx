@@ -30,7 +30,9 @@ alpha = 0;
 print = "";
 time = 0;
 depth = depth - instance_number(obj_text);
-
+option = false;
+globalvar choice;
+choice = -1;
 
 </string>
           </argument>
@@ -60,10 +62,16 @@ if(time &lt; textLen)
  time += spd;
  print = string_copy(text,0,time)
 }
+
+
 //
 if(string_length(print) == textLen)
 {
- if(keyboard_check_pressed(vk_enter) 
+
+
+
+
+ if(keyboard_check_pressed(vk_enter) &amp;&amp; !option
  || keyboard_check_pressed(ord('Z'))
  || keyboard_check_pressed(ord('X'))){
   instance_destroy();

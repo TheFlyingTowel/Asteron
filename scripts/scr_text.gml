@@ -1,4 +1,4 @@
-///scr_text("Text",Speed,x,y,auto);
+///scr_text("Text",Speed,x,y,auto,Option);
     auto = argument4;
    
 if(auto == 1)
@@ -30,7 +30,7 @@ with(txt)
     text = argument0;
     spd = argument1;
     font = fnt;
-    
+    option = argument5;
 
     textLen = string_length(text);
     font_size = font_get_size(font);
@@ -41,8 +41,22 @@ with(txt)
     text_width = string_width_ext(text,font_size + (font_size/2), maxLen);
     text_height = string_height_ext(text,font_size + (font_size/2), maxLen);
     
-    boxWidth = text_width + (padding*2);
-    boxHeight = text_height + (padding*2);
+    var h,w;
+    h = 0;
+    w = 0;
+    if(option)h = 64 w = 64;
+    
+    boxWidth = text_width + (padding*2) + w;
+    boxHeight = text_height + (padding*2) + h;
+    
+    
+    if(option){
+    
+    cho = instance_create(x + 75, y ,obj_option);
+    
+    
+    }
+    
 }
 
 }

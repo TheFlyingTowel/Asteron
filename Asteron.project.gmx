@@ -38,6 +38,9 @@
       <sprite>sprites\spr_a_player_left</sprite>
       <sprite>sprites\spr_a_player_right</sprite>
     </sprites>
+    <sprites name="utill">
+      <sprite>sprites\spr_curser</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -54,6 +57,7 @@
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_getface.gml</script>
     <script>scripts\scr_dash_state.gml</script>
+    <script>scripts\scr_option.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -89,6 +93,7 @@
       <object>objects\obj_Control</object>
       <object>objects\obj_text</object>
       <object>objects\obj_autoTextBox</object>
+      <object>objects\obj_option</object>
     </objects>
     <object>objects\obj_House</object>
     <objects name="Enviorment">
