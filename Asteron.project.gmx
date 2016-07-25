@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\ot_it</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Test">
       <sprite>sprites\spr_warp</sprite>
@@ -92,7 +94,6 @@
       <object>objects\obj_warp</object>
       <object>objects\obj_Control</object>
       <object>objects\obj_text</object>
-      <object>objects\obj_autoTextBox</object>
       <object>objects\obj_option</object>
     </objects>
     <object>objects\obj_House</object>

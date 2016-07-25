@@ -33,7 +33,34 @@ depth = depth - instance_number(obj_text);
 option = false;
 globalvar choice;
 choice = -1;
-
+last_space = 0;
+count = 0;
+line = 0;
+pause = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sets speed back
+spd = last_spd
 </string>
           </argument>
         </arguments>
@@ -60,8 +87,288 @@ choice = -1;
 if(time &lt; textLen)
 {
  time += spd;
- print = string_copy(text,0,time)
+ //this enters line breaks
+ if(string_width(print) &gt; boxWidth - padding)
+ {
+ print = string_delete(print,last_space,1);
+ print = string_insert("#",print,last_space);
+ }
+
 }
+
+if(count &lt; string_length(print))
+{
+  //keep track of text
+   if(string_char_at(print,count) == " "){   last_space = count;}
+   
+  
+
+     if(string_char_at(print,count) == "." || string_char_at(print,count) == "!" || string_char_at(print,count) == "?")
+    {
+    pause = 1;
+    spd = 0;
+
+    
+    }
+
+    if(string_char_at(print,count) == "," || string_char_at(print,count) == ":" || string_char_at(print,count) == ";" )
+    {
+    
+   pause = .3
+    spd = 0;
+   
+
+}
+
+
+//Speek
+
+switch(string_char_at(print,count))
+{
+    case "a":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "b":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "c":
+    audio_play_sound(ot_it,1,0)
+    break;
+
+    case "d":
+    audio_play_sound(ot_it,1,0)
+    break;        
+
+    case "e":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "f":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "g":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "h":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "i":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "j":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "k":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "l":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "m":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "n":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "o":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "p":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "q":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "r":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "s":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "t":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "u":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "v":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "w":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "x":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "y":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "z":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+        case "A":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "B":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "C":
+    audio_play_sound(ot_it,1,0)
+    break;
+
+    case "D":
+    audio_play_sound(ot_it,1,0)
+    break;        
+
+    case "E":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "F":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "G":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "H":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "I":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "J":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "K":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "L":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "M":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "N":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "O":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "P":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "Q":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "R":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "S":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "T":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "U":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "V":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "W":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "X":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "Y":
+    audio_play_sound(ot_it,1,0)
+    break;
+    
+    case "Z":
+    audio_play_sound(ot_it,1,0)
+    break;
+
+    default:
+    break;
+}
+
+
+
+
+
+
+         count++;
+   
+
+}
+    if(alarm[0] == -1 &amp;&amp; spd == 0 ){alarm[0] = room_speed*pause;}
+
+
+
+    
+if(string_height(text) &gt; boxHeight - padding){
+    
+    line++;
+}
+
+ print = string_copy(text,0,time)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //
@@ -69,7 +376,7 @@ if(string_length(print) == textLen)
 {
 
 
-
+spd = 0;
 
  if(keyboard_check_pressed(vk_enter) &amp;&amp; !option
  || keyboard_check_pressed(ord('Z'))
@@ -104,7 +411,8 @@ draw_set_alpha(alpha);
 if(alpha &lt; 1) alpha += spd/10; else alpha = 1;
 
 draw_set_font(font);
-if(room != rm_story) draw_set_color(c_white); else draw_set_color(c_black);
+//if(room != rm_story) draw_set_color(c_white); else draw_set_color(c_black);
+draw_set_color(c_white)
 draw_rectangle(x - 4,y - 4,x+boxWidth + 4,y+boxHeight + 4,0);
 draw_set_colour(c_black);
 draw_rectangle(x,y,x+boxWidth,y+boxHeight,0);
@@ -120,8 +428,19 @@ draw_text_ext
     font_size + (font_size/2),
     maxLen
 )
+
+
+
 draw_set_alpha(1);
 
+var txtLen;
+txtLen = string_length(print);
+
+view_xview = -(view_wview/2) + x
+view_yview = -(view_hview/2) + y
+//draw_text(50,200,"Text LEN: " + string(txtLen));
+//draw_text(50,220,"View size: " + string(view_wview));
+//draw_text(50,240,"Text Speed: "+string(spd));
 </string>
           </argument>
         </arguments>
