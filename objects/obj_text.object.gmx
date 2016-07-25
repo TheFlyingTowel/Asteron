@@ -37,6 +37,7 @@ last_space = 0;
 count = 0;
 line = 0;
 pause = 0;
+Spr_spd = 0;
 </string>
           </argument>
         </arguments>
@@ -61,6 +62,40 @@ pause = 0;
             <kind>1</kind>
             <string>///Sets speed back
 spd = last_spd
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Animation Tick
+if(Spr_spd &lt; 2)
+{
+Spr_spd +=.2;
+}else
+{
+Spr_spd = 0;
+}
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -102,15 +137,15 @@ if(count &lt; string_length(print))
    if(string_char_at(print,count) == " "){   last_space = count;}
    
   
-
+    //This will pause every time the is a punctuation. Like "!" "." "?" 
      if(string_char_at(print,count) == "." || string_char_at(print,count) == "!" || string_char_at(print,count) == "?")
     {
     pause = 1;
     spd = 0;
-
     
     }
-
+    //Tihis will pause for a breef moment or slow down the pasing breefly when there is a
+    //punctuation like "," ":" ";" 
     if(string_char_at(print,count) == "," || string_char_at(print,count) == ":" || string_char_at(print,count) == ";" )
     {
     
@@ -122,215 +157,215 @@ if(count &lt; string_length(print))
 
 
 //Speek
-
+//This sets the voie for the current speeker
 switch(string_char_at(print,count))
 {
     case "a":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "b":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "c":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
 
     case "d":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;        
 
     case "e":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "f":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "g":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "h":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "i":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "j":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "k":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "l":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "m":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "n":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "o":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "p":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "q":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "r":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "s":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "t":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "u":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "v":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "w":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "x":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "y":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "z":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
         case "A":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "B":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "C":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
 
     case "D":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;        
 
     case "E":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "F":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "G":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "H":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "I":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "J":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "K":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "L":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "M":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "N":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "O":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "P":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "Q":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "R":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "S":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "T":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "U":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "V":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "W":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "X":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "Y":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
     
     case "Z":
-    audio_play_sound(ot_it,1,0)
+    audio_play_sound(voice,1,0)
     break;
 
     default:
@@ -435,6 +470,10 @@ draw_set_alpha(1);
 
 var txtLen;
 txtLen = string_length(print);
+
+if(string_length(print) == textLen){
+draw_sprite(spr_line_end,Spr_spd,x + boxWidth - 32, y + boxHeight);
+}
 
 view_xview = -(view_wview/2) + x
 view_yview = -(view_hview/2) + y

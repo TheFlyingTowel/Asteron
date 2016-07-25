@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>scr_text("This is a test for the text box system in this game... As you can see the punctuation can work here, with this we cas control the pasing of the game directly. Any punctuation will work! So this is the final additon to the text box system, I will be moving on
+  <code>scr_text("This is a test for the text box system in this game.. As you can see the punctuation can work here, with this we cas control the pasing of the game directly. Any punctuation will work! So this is the final additon to the text box system, I will be moving on
 to the story line soon...",.3,200,100,false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

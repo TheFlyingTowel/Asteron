@@ -102,10 +102,6 @@ visible = 1;
           <argument>
             <kind>1</kind>
             <string>///Animation Tick
-
-
-
-
 if(animate &lt; 5){animate +=.2;}else{animate = 0;}
 
 

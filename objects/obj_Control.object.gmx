@@ -28,7 +28,10 @@
             <string>///Creates global vars
 globalvar wall_show;
 wall_show = false;
-alarm[0] = room_speed*5;
+globalvar voice;
+voice = MB_on_it;
+//alarm[0] = room_speed*5;
+
 
 </string>
           </argument>

@@ -5,7 +5,9 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\ot_it</sound>
+    <sounds name="Sounds">
+      <sound>sound\MB_on_it</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Test">
@@ -42,6 +44,7 @@
     </sprites>
     <sprites name="utill">
       <sprite>sprites\spr_curser</sprite>
+      <sprite>sprites\spr_line_end</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
