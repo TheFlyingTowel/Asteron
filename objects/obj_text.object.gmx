@@ -472,7 +472,7 @@ var txtLen;
 txtLen = string_length(print);
 
 if(string_length(print) == textLen){
-draw_sprite(spr_line_end,Spr_spd,x + boxWidth - 32, y + boxHeight);
+draw_sprite_ext(spr_line_end,Spr_spd,x + boxWidth - 32, y + boxHeight,.9,.9,0,c_white,1);
 }
 
 view_xview = -(view_wview/2) + x
