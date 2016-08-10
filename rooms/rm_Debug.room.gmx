@@ -271,6 +271,7 @@ scr_text("The Debug Room...",.3,350,200,false);</code>
     <instance objName="obj_full_wall" x="128" y="0" name="inst_3787E839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall" x="96" y="0" name="inst_E2E41575" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="480" y="160" name="inst_D987076D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="416" y="416" name="inst_7D639042" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="64" y="192" w="1" h="1" xo="0" yo="0" id="10000006" name="inst_EA28B859" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

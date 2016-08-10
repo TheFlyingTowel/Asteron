@@ -165,9 +165,9 @@ draw_self();
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>2,14</point>
-    <point>12,14</point>
-    <point>12,18</point>
-    <point>2,18</point>
+    <point>2,12</point>
+    <point>12,12</point>
+    <point>12,19</point>
+    <point>2,19</point>
   </PhysicsShapePoints>
 </object>
