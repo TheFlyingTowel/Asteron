@@ -53,6 +53,7 @@
     <background>background\background1</background>
     <background>background\bg_indoor</background>
     <background>background\background3</background>
+    <background>background\bg_bottom_wall</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
