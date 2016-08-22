@@ -12,7 +12,7 @@
   <showcolour>-1</showcolour>
   <code>///Creates player in the room;
 if(!instance_exists(obj_player)){instance_create(384,320,obj_player);}
-scr_text("The Debug Room...",.3,350,200,false);</code>
+//scr_text("The Debug Room...",.3,350,200,false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -95,7 +95,7 @@ scr_text("The Debug Room...",.3,350,200,false);</code>
     <instance objName="obj_wall_bottom_left_corner" x="256" y="512" name="inst_279466D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_top_left_wall_corner" x="256" y="288" name="inst_64F74D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_bottom_right_corner" x="544" y="512" name="inst_FAC8E9C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Sensor" x="800" y="416" name="inst_86B8FDC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Sensor" x="800" y="416" name="inst_86B8FDC0" locked="0" code="trigger = true;&#xA;trigger2 = false;&#xA;text = &quot;Hello.&quot;;&#xA;txtSpeed = .5;&#xA;bx = 350;&#xA;by = 200;&#xA;option = false;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_full_wall" x="64" y="0" name="inst_D07D426D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Sensor_top_right" x="928" y="288" name="inst_8F3BDBB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Sensor_top_left" x="640" y="288" name="inst_1E44FECF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

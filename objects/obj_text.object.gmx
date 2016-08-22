@@ -409,7 +409,7 @@ if(string_height(text) &gt; boxHeight - padding){
 //
 if(string_length(print) == textLen)
 {
-
+alpha = 1;
 
 spd = 0;
 

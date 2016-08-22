@@ -29,7 +29,7 @@
 globalvar wall_show;
 wall_show = false;
 globalvar voice;
-voice = MB_on_it;
+voice = mute;
 //alarm[0] = room_speed*5;
 
 
